@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sarah Elshiaty — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<!-- ======================== NAV ======================== -->
+<nav id="navbar">
+  <div class="nav-container">
+    <a href="#hero" class="nav-logo">SE<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#highlights">Highlights</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ======================== HERO ======================== -->
+<section id="hero">
+  <canvas id="particleCanvas"></canvas>
+  <div class="hero-content">
+    <div class="hero-photo-wrap">
+      <img src="images/Me.png" alt="Sarah Elshiaty" class="hero-photo" />
+    </div>
+    <div class="hero-text">
+      <p class="hero-eyebrow">Hello, I'm</p>
+      <h1 class="hero-name">Sarah Elshiaty</h1>
+      <p class="hero-title">Computer Science Student &nbsp;|&nbsp; Machine Learning, Cybersecurity &amp; Intelligent Systems Enthusiast</p>
+      <p class="hero-desc">Blending analytical thinking, creative problem-solving, and technical curiosity to build intelligent, secure, and impactful digital solutions.</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">Explore My Portfolio</a>
+        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+      </div>
+      <p class="hero-quote"><i class="fas fa-quote-left"></i> Driven by curiosity, guided by logic. <i class="fas fa-quote-right"></i></p>
+    </div>
+  </div>
+  <div class="hero-scroll-hint"><i class="fas fa-chevron-down"></i></div>
+</section>
+
+<!-- ======================== QUICK FACTS ======================== -->
+<section id="quickfacts" class="reveal">
+  <div class="container">
+    <div class="facts-grid">
+      <div class="fact-card"><i class="fas fa-map-marker-alt"></i><span>Jeddah, Saudi Arabia</span></div>
+      <div class="fact-card"><i class="fas fa-graduation-cap"></i><span>CS Undergraduate</span></div>
+      <div class="fact-card"><i class="fas fa-brain"></i><span>AI, Data Science &amp; Cybersecurity</span></div>
+      <div class="fact-card"><i class="fas fa-star"></i><span>GPA: 3.97 / 4.00</span></div>
+      <div class="fact-card"><i class="fas fa-flag"></i><span>Egyptian</span></div>
+      <div class="fact-card"><i class="fas fa-language"></i><span>Arabic, English, French &amp; German</span></div>
+      <div class="fact-card"><i class="fas fa-code"></i><span>12+ Technical Projects</span></div>
+      <div class="fact-card"><i class="fas fa-hands-helping"></i><span>627+ Volunteering Hours</span></div>
+      <div class="fact-card"><i class="fas fa-shield-alt"></i><span>ML &amp; Cybersecurity Enthusiast</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== ABOUT ======================== -->
+<section id="about" class="reveal">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Who I Am</span>
+      <h2 class="section-title">About Me</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-photo-col">
+        <div class="about-photo-wrap">
+          <img src="images/Me.png" alt="Sarah Elshiaty" />
+          <div class="about-photo-deco"></div>
+        </div>
+      </div>
+      <div class="about-text-col">
+        <p>I'm a Computer Science student at Effat University passionate about machine learning, cybersecurity, data science, and intelligent systems. I enjoy combining analytical thinking, creative problem-solving, and research-driven development to build impactful technical solutions across healthcare, software, web systems, databases, and cybersecurity projects.</p>
+        <p>Through academic projects, leadership involvement, and continuous learning, I've developed a strong interest in building intelligent, organized, and purposeful systems that solve real-world problems through technology.</p>
+        <div class="about-tags">
+          <span>Machine Learning</span><span>Cybersecurity</span><span>Data Science</span>
+          <span>Intelligent Systems</span><span>Healthcare AI</span><span>Research</span>
+        </div>
+        <div class="about-links">
+          <a href="https://github.com/SarahElshiaty" target="_blank" class="btn btn-sm"><i class="fab fa-github"></i> GitHub</a>
+          <a href="https://www.linkedin.com/in/sarah-elshiaty-62820b307" target="_blank" class="btn btn-sm"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== EDUCATION ======================== -->
+<section id="education" class="reveal">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Academic Background</span>
+      <h2 class="section-title">Education</h2>
+    </div>
+    <div class="edu-grid">
+      <div class="edu-card">
+        <div class="edu-icon"><i class="fas fa-university"></i></div>
+        <div class="edu-body">
+          <h3>Bachelor of Science in Computer Science</h3>
+          <p class="edu-school">Effat University</p>
+          <p class="edu-dates">2023 – Present &nbsp;|&nbsp; Expected: 2027</p>
+          <div class="edu-badges">
+            <span class="badge green">GPA: 3.97 / 4.00</span>
+            <span class="badge cream">Dean's List 2023–2024</span>
+            <span class="badge cream">Dean's List 2024–2025</span>
+          </div>
+          <div class="edu-courses">
+            <p class="courses-label">Relevant Coursework:</p>
+            <div class="courses-tags">
+              <span>Machine Learning</span><span>Data Sciences</span><span>Artificial Intelligence</span>
+              <span>Ethical Hacking</span><span>Info &amp; Cyber Security</span><span>Software Engineering</span>
+              <span>Web Application Development</span><span>Database Systems</span>
+              <span>Data Structures &amp; Algorithms</span><span>OOP</span>
+              <span>Programming Languages</span><span>Computer Networks</span>
+              <span>Numerical Analysis</span><span>Algorithm Analysis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-icon"><i class="fas fa-school"></i></div>
+        <div class="edu-body">
+          <h3>American High School Diploma</h3>
+          <p class="edu-school">Al-Kon International School</p>
+          <p class="edu-dates">2019 – 2023</p>
+          <div class="edu-badges">
+            <span class="badge green">GPA: 4.0 / 4.0</span>
+            <span class="badge cream">Student Council Vice President 2022–2023</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== SKILLS ======================== -->
+<section id="skills" class="reveal">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Technical Expertise</span>
+      <h2 class="section-title">Skills</h2>
+    </div>
+    <div class="skills-layout">
+      <div class="skills-left">
+        <div class="skill-group">
+          <h4><i class="fas fa-brain"></i> AI &amp; Data Science</h4>
+          <div class="skill-pills">
+            <span>Machine Learning</span><span>Data Analysis</span><span>Data Visualization</span>
+            <span>Exploratory Data Analysis</span><span>Feature Engineering</span><span>Model Evaluation</span>
+            <span>Classification Models</span><span>Threshold Optimization</span>
+            <span>Healthcare Analytics</span><span>Research-Based Analysis</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4><i class="fas fa-shield-alt"></i> Cybersecurity</h4>
+          <div class="skill-pills">
+            <span>Ethical Hacking Concepts</span><span>Web Application Security</span>
+            <span>SQL Injection Testing</span><span>XSS Awareness</span>
+            <span>Vulnerability Analysis</span><span>Password Cracking Concepts</span>
+            <span>Reconnaissance</span><span>Security Reporting</span><span>Cybersecurity Ethics</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4><i class="fas fa-heart"></i> Soft Skills</h4>
+          <div class="skill-pills small">
+            <span>Leadership</span><span>Teamwork</span><span>Communication</span>
+            <span>Public Speaking</span><span>Time Management</span><span>Adaptability</span>
+            <span>Creativity</span><span>Research Skills</span><span>Analytical Thinking</span>
+            <span>Critical Thinking</span><span>Problem Solving</span><span>Event Coordination</span>
+            <span>Academic Writing</span><span>Self-Learning</span><span>Resilience</span>
+            <span>Intercultural Awareness</span>
+          </div>
+        </div>
+      </div>
+      <div class="skills-right">
+        <div class="skill-group">
+          <h4><i class="fas fa-code"></i> Programming &amp; Development</h4>
+          <div class="lang-grid">
+            <div class="lang-card"><span class="lang-icon">🐍</span><span>Python</span></div>
+            <div class="lang-card"><span class="lang-icon">☕</span><span>Java</span></div>
+            <div class="lang-card"><span class="lang-icon">⚙️</span><span>C++</span></div>
+            <div class="lang-card"><span class="lang-icon">🗃️</span><span>SQL</span></div>
+            <div class="lang-card"><span class="lang-icon">🐘</span><span>PHP</span></div>
+            <div class="lang-card"><span class="lang-icon">🌐</span><span>HTML</span></div>
+            <div class="lang-card"><span class="lang-icon">🎨</span><span>CSS</span></div>
+            <div class="lang-card"><span class="lang-icon">📊</span><span>MATLAB</span></div>
+            <div class="lang-card"><span class="lang-icon">λ</span><span>Scheme</span></div>
+            <div class="lang-card"><span class="lang-icon">∞</span><span>Common Lisp</span></div>
+            <div class="lang-card"><span class="lang-icon">✨</span><span>JavaScript</span></div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4><i class="fas fa-tools"></i> Tools &amp; Platforms</h4>
+          <div class="tools-grid">
+            <div class="tool-chip"><i class="fab fa-github"></i> GitHub</div>
+            <div class="tool-chip"><i class="fas fa-code-branch"></i> Git</div>
+            <div class="tool-chip"><i class="fas fa-code"></i> VS Code</div>
+            <div class="tool-chip"><i class="fas fa-fire"></i> Google Colab</div>
+            <div class="tool-chip"><i class="fas fa-book"></i> Jupyter</div>
+            <div class="tool-chip"><i class="fab fa-linux"></i> Linux</div>
+            <div class="tool-chip"><i class="fab fa-docker"></i> Docker</div>
+            <div class="tool-chip"><i class="fas fa-flask"></i> Flask</div>
+            <div class="tool-chip"><i class="fas fa-database"></i> MySQL</div>
+            <div class="tool-chip"><i class="fas fa-network-wired"></i> Packet Tracer</div>
+            <div class="tool-chip"><i class="fas fa-desktop"></i> VirtualBox</div>
+            <div class="tool-chip"><i class="fas fa-bug"></i> Burp Suite</div>
+            <div class="tool-chip"><i class="fas fa-syringe"></i> SQLMap</div>
+            <div class="tool-chip"><i class="fas fa-wifi"></i> Wireshark</div>
+            <div class="tool-chip"><i class="fas fa-file-alt"></i> Overleaf/LaTeX</div>
+            <div class="tool-chip"><i class="fas fa-pencil-ruler"></i> Figma</div>
+            <div class="tool-chip"><i class="fab fa-microsoft"></i> MS Office</div>
+            <div class="tool-chip"><i class="fas fa-palette"></i> Canva</div>
+            <div class="tool-chip"><i class="fas fa-search"></i> Google Scholar</div>
+            <div class="tool-chip"><i class="fas fa-book-open"></i> ScienceDirect</div>
+            <div class="tool-chip"><i class="fas fa-microchip"></i> IEEE Xplore</div>
+            <div class="tool-chip"><i class="fab fa-pinterest"></i> Pinterest</div>
+            <div class="tool-chip"><i class="fas fa-project-diagram"></i> PlantUML</div>
+            <div class="tool-chip"><i class="fas fa-presentation"></i> Gamma</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== PROJECTS ======================== -->
+<section id="projects" class="reveal">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">My Work</span>
+      <h2 class="section-title">Projects</h2>
+    </div>
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="software">Software</button>
+      <button class="filter-btn" data-filter="ai">AI &amp; Data Science</button>
+      <button class="filter-btn" data-filter="security">Security &amp; Networking</button>
+      <button class="filter-btn" data-filter="web">Web &amp; Database</button>
+      <button class="filter-btn" data-filter="current">Current Projects</button>
+    </div>
+    <div class="projects-grid" id="projectsGrid">
+
+      <!-- P1 -->
+      <div class="project-card" data-category="ai">
+        <div class="project-img"><img src="images/p1.png" alt="ICU Mortality Risk Prediction" onerror="this.src='images/placeholder.png'" /><div class="project-img-overlay"></div></div>
+        <div class="project-body">
+          <span class="project-cat">AI &amp; Data Science</span>
+          <h3>ICU Mortality Risk Prediction</h3>
+          <p>Machine learning project predicting ICU patient risk patterns using clinical data, feature engineering, and threshold optimization.</p>
+          <div class="project-tags"><span>Python</span><span>Pandas</span><span>Scikit-learn</span><span>XGBoost</span><span>ML</span><span>Healthcare AI</span></div>
+          <div class="project-actions">
+            <a href="https://github.com/SarahElshiaty/ICU-Mortality-Prediction-ML" target="_blank" class="btn-action"><i class="fab fa-github"></i> Code</a>
+            <button class="btn-action btn-details" data-project="p1"><i class="fas fa-info-circle"></i> Details</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- P2 -->
+      <div class="project-card" data-category="ai">
+        <div class="project-img"><img src="images/p2.png" alt="ICU Clinical Data Analysis" onerror="this.src='images/placeholder.png'" /><div class="project-img-overlay"></div></div>
+        <div class="project-body">
+          <span class="project-cat">AI &amp; Data Science</span>
+          <h3>ICU Clinical Data Analysis &amp; Visualization</h3>
+          <p>Data science project analyzing ICU patient patterns through cleaning, exploratory analysis, visualizations, and stakeholder-oriented interpretation.</p>
+          <div class="project-tags"><span>Python</span><span>Pandas</span><span>EDA</span><span>Visualization</span><span>Healthcare Data</span></div>
+          <div class="project-actions">
+            <a href="https://github.com/SarahElshiaty/icu-clinical-data-analysis" target="_blank" class="btn-action"><i class="fab fa-github"></i> Code</a>
+            <button class="btn-action btn-details" data-project="p2"><i class="fas fa-info-circle"></i> Details</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- P3 -->
+      <div class="project-card" data-category="security">
+        <div class="project-img"><img src="images/p3.jpg" alt="Web Application Security Assessment" onerror="this.src='images/placeholder.png'" /><div class="project-img-overlay"></div></div>
+        <div class="project-body">
+          <span class="project-cat">Security &amp; Networking</span>
+          <h3>Web Application Security Assessment</h3>
+          <p>Security assessment project focused on testing and analyzing web application vulnerabilities.</p>
+          <div class="project-tags"><span>Security</span><span>Ethical Hacking</span><span>SQLi</span><span>XSS</span><span>Vulnerability Analysis</span></div>
+          <div class="project-actions">
+            <a href="https://github.com/SarahElshiaty/web-security-assessment" target="_blank" class="btn-action"><i class="fas fa-eye"></i> View</a>
+            <button class="btn-action btn-details" data-project="p3"><i class="fas fa-info-circle"></i> Details</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- P4 -->
+      <div class="project-card" data-category="software">
+        <div class="project-img"><img src="images/p4.jpg" alt="Smart ATM Banking System" onerror="this.src='images/placeholder.png'" /><div class="project-img-overlay"></div></div>
+        <div class="project-body">
+          <span class="project-cat">Software</span>
+          <h3>Smart ATM Banking System</h3>
+          <p>Java-based ATM system designed for account management, transaction handling, and structured banking operations.</p>
+          <div class="project-tags"><span>Java</span><span>OOP</span><span>Banking System</span><span>Transactions</span></div>
+          <div class="project-actions">
+            <a href="https://github.com/SarahElshiaty/smart-atm-banking-system" target="_blank" class="btn-action"><i class="fab fa-github"></i> Code</a>
+            <button class="btn-action btn-details" data-project="p4"><i class="fas fa-info-circle"></i> Details</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- P5 -->
+      <div class="project-card" data-category="web">
+        <div class="project-img"><img src="images/p5.jpg" alt="MindBalance Web Application" onerror="this.src='images/placeholder.png'" /><div class="project-img-overlay"></div></div>
+        <div class="project-body">
+          <span class="project-cat">Web &amp; Database</span>
+          <h3>MindBalance Web Application</h3>
+          <p>Mental wellness web platform focused on user support, accessibility, and database-driven interaction.</p>
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>PHP</span><span>SQL</span><span>Web Development</span></div>
+          <div class="project-actions">
+            <a href="https://github.com/SarahElshiaty/mindbalance-web-application" target="_blank" class="btn-action"><i class="fab fa-github"></i> Code</a>
+            <button class="btn-action btn-details" data-project="p5"><i class="fas fa-info-circle"></i> Details</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- P6 -->
+      <div class="project-card" data-category="ai">
+        <div class="project-img"><img src="images/p6.jpg" alt="Intelligent Tutor Recommendation System" onerror="this.src='images/placeholder.png'" /><div class="project-img-overlay"></div></div>
+        <div class="project-body">
+          <span class="project-cat">AI &amp; Data Science</span>
+          <h3>Intelligent Tutor Recommendation System</h3>
+          <p>AI-based tutoring platform focused on intelligent tutor matching, recommendation logic, and personalized learning support.</p>
+          <div class="project-tags"><span>Python</span><span>AI</span><span>Intelligent Systems</span><span>Recommendation Logic</span></div>
+          <div class="project-actions">
+            <a href="https://github.com/SarahElshiaty/intelligent-tutor-recommendation-system" target="_blank" class="btn-action"><i class="fas fa-eye"></i> View</a>
+            <button class="btn-action btn-details" data-project="p6"><i class="fas fa-info-circle"></i> Details</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- P7 -->
+      <div class="project-card" data-category="software">
+        <div class="project-img"><img src="images/p7.png" alt="TutorLink System Design" onerror="this.src='images/placeholder.png'" /><div class="project-img-overlay"></div></div>
+        <div class="project-body">
+          <span class="project-cat">Software</span>
+          <h3>TutorLink System Design</h3>
+          <p>Software engineering project focused on designing a tutor-booking and educational service platform.</p>
+          <div class="project-tags"><span>SRS</span><span>UML</span><span>System Design</span><span>SDLC</span></div>
+          <div class="project-actions">
+            <a href="https://github.com/SarahElshiaty/tutorlink-system-design" target="_blank" class="btn-action"><i class="fas fa-eye"></i> View</a>
+            <button class="btn-action btn-details" data-project="p7"><i class="fas fa-info-circle"></i> Details</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- P8 -->
+      <div class="project-card" data-category="software">
+        <div class="project-img"><img src="images/p8.jpeg" alt="Structured Data Management System" onerror="this.src='images/placeholder.png'" /><div class="project-img-overlay"></div></div>
+        <div class="project-body">
+          <span class="project-cat">Software</span>
+          <h3>Structured Data Management System</h3>
+          <p>C++ project focused on structured data organization, processing, and algorithmic operations.</p>
+          <div class="project-tags"><span>C++</span><span>Data Structures</span><span>Algorithms</span></div>
+          <div class="project-actions">
+            <a href="https://github.com/SarahElshiaty/structured-data-management-system" target="_blank" class="btn-action"><i class="fab fa-github"></i> Code</a>
+            <button class="btn-action btn-details" data-project="p8"><i class="fas fa-info-circle"></i> Details</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- P9 -->
+      <div class="project-card" data-category="security">
+        <div class="project-img"><img src="images/p9.jpg" alt="Network Design & Simulation" onerror="this.src='images/placeholder.png'" /><div class="project-img-overlay"></div></div>
+        <div class="project-body">
+          <span class="project-cat">Security &amp; Networking</span>
+          <h3>Network Design &amp; Simulation</h3>
+          <p>Network simulation project involving topology design, device configuration, and connectivity analysis.</p>
+          <div class="project-tags"><span>Networking</span><span>Packet Tracer</span><span>Routers</span><span>Switches</span></div>
+          <div class="project-actions">
+            <a href="https://github.com/SarahElshiaty/network-design-simulation" target="_blank" class="btn-action"><i class="fas fa-eye"></i> View</a>
+            <button class="btn-action btn-details" data-project="p9"><i class="fas fa-info-circle"></i> Details</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- P10 -->
+      <div class="project-card" data-category="web">
+        <div class="project-img"><img src="images/p10.jpg" alt="Relational Database Management System" onerror="this.src='images/placeholder.png'" /><div class="project-img-overlay"></div></div>
+        <div class="project-body">
+          <span class="project-cat">Web &amp; Database</span>
+          <h3>Relational Database Management System</h3>
+          <p>Database management project focused on structured data storage, querying, and relational design.</p>
+          <div class="project-tags"><span>SQL</span><span>Python</span><span>Database</span><span>MySQL</span></div>
+          <div class="project-actions">
+            <a href="https://github.com/SarahElshiaty/relational-database-management-system" target="_blank" class="btn-action"><i class="fab fa-github"></i> Code</a>
+            <button class="btn-action btn-details" data-project="p10"><i class="fas fa-info-circle"></i> Details</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- P11 -->
+      <div class="project-card" data-category="software">
+        <div class="project-img"><img src="images/p11.jpg" alt="Interactive Tic Tac Toe Game" onerror="this.src='images/placeholder.png'" /><div class="project-img-overlay"></div></div>
+        <div class="project-body">
+          <span class="project-cat">Software</span>
+          <h3>Interactive Tic Tac Toe Game</h3>
+          <p>C++ interactive game project featuring replay functionality, score tracking, and improved gameplay flow.</p>
+          <div class="project-tags"><span>C++</span><span>Game Logic</span><span>Advanced Programming</span></div>
+          <div class="project-actions">
+            <a href="https://github.com/SarahElshiaty/interactive-tic-tac-toe" target="_blank" class="btn-action"><i class="fab fa-github"></i> Code</a>
+            <button class="btn-action btn-details" data-project="p11"><i class="fas fa-info-circle"></i> Details</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- P12 -->
+      <div class="project-card" data-category="software">
+        <div class="project-img"><img src="images/p12.jpg" alt="Contact Management System" onerror="this.src='images/placeholder.png'" /><div class="project-img-overlay"></div></div>
+        <div class="project-body">
+          <span class="project-cat">Software</span>
+          <h3>Contact Management System</h3>
+          <p>Python-based contact management system with validation, searching, updating, and backup functionality.</p>
+          <div class="project-tags"><span>Python</span><span>File Handling</span><span>Validation</span><span>CLI</span></div>
+          <div class="project-actions">
+            <a href="https://github.com/SarahElshiaty/contact-management-system" target="_blank" class="btn-action"><i class="fab fa-github"></i> Code</a>
+            <button class="btn-action btn-details" data-project="p12"><i class="fas fa-info-circle"></i> Details</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- P13 -->
+      <div class="project-card current-glow" data-category="current">
+        <div class="project-img"><img src="images/p13.png" alt="EpiLoad AI Framework" onerror="this.src='images/placeholder.png'" /><div class="project-img-overlay"></div></div>
+        <div class="project-body">
+          <span class="project-cat current">Current Project</span>
+          <h3>EpiLoad: AI Framework for Hospital Load Management</h3>
+          <p>Senior project proposing an integrated AI framework for hospital load management during epidemic surges.</p>
+          <div class="project-tags"><span>AI</span><span>Healthcare</span><span>Decision Support</span><span>Predictive Analytics</span><span>Senior Project</span></div>
+          <div class="project-actions">
+            <a href="https://github.com/SarahElshiaty/epiload-ai-hospital-load-management" target="_blank" class="btn-action"><i class="fas fa-eye"></i> View Concept</a>
+            <button class="btn-action btn-details" data-project="p13"><i class="fas fa-info-circle"></i> Details</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======================== HIGHLIGHTS ======================== -->
+<section id="highlights" class="reveal">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Achievements &amp; Experience</span>
+      <h2 class="section-title">Highlights</h2>
+    </div>
+    <div class="tab-bar">
+      <button class="tab-btn active" data-tab="certificates">Certificates</button>
+      <button class="tab-btn" data-tab="experience">Experience</button>
+      <button class="tab-btn" data-tab="papers">Papers</button>
+      <button class="tab-btn" data-tab="achievements">Achievements</button>
+    </div>
+
+    <!-- CERTIFICATES -->
+    <div class="tab-content active" id="tab-certificates">
+      <div class="cert-grid">
+        <div class="cert-card featured">
+          <div class="cert-icon"><i class="fab fa-ibm"></i></div>
+          <div class="cert-body">
+            <h4>IBM DevOps &amp; Software Engineering Professional Certificate</h4>
+            <p class="cert-provider">IBM / Coursera &nbsp;·&nbsp; Apr 22, 2026</p>
+            <p class="cert-desc">15-course professional certificate covering DevOps, cloud, agile, containers, CI/CD, security, and a capstone project.</p>
+            <div class="cert-courses">
+              <span>Intro to DevOps</span><span>Cloud Computing</span><span>Agile &amp; Scrum</span>
+              <span>Software Engineering</span><span>Git &amp; GitHub</span><span>Linux Shell</span>
+              <span>Python for AI</span><span>AI Apps with Flask</span><span>Docker &amp; Kubernetes</span>
+              <span>Microservices</span><span>Test &amp; BDD</span><span>CI/CD</span>
+              <span>App Security</span><span>Monitoring &amp; Observability</span><span>DevOps Capstone</span>
+            </div>
+          </div>
+          <a href="#" class="btn-view">View <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="cert-card"><div class="cert-icon"><i class="fab fa-ibm"></i></div><div class="cert-body"><h4>Python for Data Science, AI &amp; Development</h4><p class="cert-provider">IBM / Coursera</p></div><a href="#" class="btn-view">View <i class="fas fa-arrow-right"></i></a></div>
+        <div class="cert-card"><div class="cert-icon"><i class="fas fa-calculator"></i></div><div class="cert-body"><h4>Calculus for Machine Learning &amp; Data Science</h4><p class="cert-provider">DeepLearning.AI / Coursera</p></div><a href="#" class="btn-view">View <i class="fas fa-arrow-right"></i></a></div>
+        <div class="cert-card"><div class="cert-icon"><i class="fas fa-square-root-alt"></i></div><div class="cert-body"><h4>Linear Algebra for Machine Learning &amp; Data Science</h4><p class="cert-provider">DeepLearning.AI / Coursera</p></div><a href="#" class="btn-view">View <i class="fas fa-arrow-right"></i></a></div>
+        <div class="cert-card"><div class="cert-icon"><i class="fas fa-chart-bar"></i></div><div class="cert-body"><h4>Probability &amp; Statistics for ML &amp; Data Science</h4><p class="cert-provider">DeepLearning.AI / Coursera</p></div><a href="#" class="btn-view">View <i class="fas fa-arrow-right"></i></a></div>
+        <div class="cert-card"><div class="cert-icon"><i class="fas fa-users"></i></div><div class="cert-body"><h4>Developing Interpersonal Skills</h4><p class="cert-provider">IBM / Coursera</p></div><a href="#" class="btn-view">View <i class="fas fa-arrow-right"></i></a></div>
+        <div class="cert-card"><div class="cert-icon"><i class="fas fa-briefcase"></i></div><div class="cert-body"><h4>Workplace Ethics &amp; Professionalism</h4><p class="cert-provider">Coursera</p></div><a href="#" class="btn-view">View <i class="fas fa-arrow-right"></i></a></div>
+        <div class="cert-card"><div class="cert-icon"><i class="fas fa-microphone"></i></div><div class="cert-body"><h4>Speak English Professionally</h4><p class="cert-provider">Georgia Tech / Coursera</p></div><a href="#" class="btn-view">View <i class="fas fa-arrow-right"></i></a></div>
+        <div class="cert-card"><div class="cert-icon"><i class="fas fa-sync-alt"></i></div><div class="cert-body"><h4>Change Management</h4><p class="cert-provider">Coursera</p></div><a href="#" class="btn-view">View <i class="fas fa-arrow-right"></i></a></div>
+        <div class="cert-card"><div class="cert-icon"><i class="fas fa-handshake"></i></div><div class="cert-body"><h4>Preparation for Job Interviews</h4><p class="cert-provider">Coursera</p></div><a href="#" class="btn-view">View <i class="fas fa-arrow-right"></i></a></div>
+        <div class="cert-card"><div class="cert-icon"><i class="fas fa-lightbulb"></i></div><div class="cert-body"><h4>Entrepreneurship I: Laying the Foundation</h4><p class="cert-provider">University of Illinois / Coursera</p></div><a href="#" class="btn-view">View <i class="fas fa-arrow-right"></i></a></div>
+        <div class="cert-card"><div class="cert-icon"><i class="fas fa-paint-brush"></i></div><div class="cert-body"><h4>Digital Creativity</h4><p class="cert-provider">Arizona State University / Coursera</p></div><a href="#" class="btn-view">View <i class="fas fa-arrow-right"></i></a></div>
+        <div class="cert-card"><div class="cert-icon"><i class="fas fa-spell-check"></i></div><div class="cert-body"><h4>Grammar &amp; Punctuation</h4><p class="cert-provider">UCI / Coursera</p></div><a href="#" class="btn-view">View <i class="fas fa-arrow-right"></i></a></div>
+      </div>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div class="tab-content" id="tab-experience">
+      <div class="exp-list">
+        <div class="exp-card">
+          <div class="exp-icon"><i class="fas fa-laptop-code"></i></div>
+          <div class="exp-body">
+            <h4>Academic Project Developer</h4>
+            <p>Built and contributed to technical projects across machine learning, cybersecurity, databases, web development, software engineering, OOP, AI, and networking.</p>
+          </div>
+        </div>
+        <div class="exp-card">
+          <div class="exp-icon"><i class="fas fa-microscope"></i></div>
+          <div class="exp-body">
+            <h4>Research-Oriented Student Developer</h4>
+            <p>Worked on research-driven academic projects involving healthcare prediction, data analysis, intelligent systems, and structured technical reporting.</p>
+          </div>
+        </div>
+        <div class="exp-card">
+          <div class="exp-icon"><i class="fas fa-crown"></i></div>
+          <div class="exp-body">
+            <h4>Student Leader &amp; Organizer</h4>
+            <p>Supported student activities, event coordination, orientation efforts, and academic and community engagement initiatives across multiple semesters.</p>
+          </div>
+        </div>
+        <div class="exp-card">
+          <div class="exp-icon"><i class="fas fa-hands-helping"></i></div>
+          <div class="exp-body">
+            <h4>Volunteer &amp; Community Contributor</h4>
+            <p>Completed 627+ documented volunteering hours through external and university-related service activities, demonstrating sustained community commitment.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAPERS -->
+    <div class="tab-content" id="tab-papers">
+      <div class="papers-grid">
+        <div class="paper-card">
+          <div class="paper-icon"><i class="fas fa-heartbeat"></i></div>
+          <div class="paper-body">
+            <h4>ICU Mortality Prediction Using Machine Learning: A Practical Framework for Risk Stratification</h4>
+            <p>A machine learning study on ICU mortality prediction under class imbalance and label noise, combining feature engineering, threshold optimization, and clinical interpretability.</p>
+            <div class="paper-tags"><span>ML</span><span>Healthcare AI</span><span>XGBoost</span></div>
+          </div>
+          <a href="Papers/ML_Final_Project_Paper.pdf" target="_blank" class="btn-view">View <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="paper-card">
+          <div class="paper-icon"><i class="fas fa-chart-line"></i></div>
+          <div class="paper-body">
+            <h4>ICU Clinical Data Science: Exploratory Analysis &amp; Mortality Pattern Visualization</h4>
+            <p>Data science workflow on ICU monitoring data covering cleaning, EDA, feature interpretation, and stakeholder-oriented visualization of mortality-related clinical patterns.</p>
+            <div class="paper-tags"><span>EDA</span><span>Pandas</span><span>Visualization</span></div>
+          </div>
+          <a href="Papers/DS_Final_Project_Paper.pdf" target="_blank" class="btn-view">View <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="paper-card">
+          <div class="paper-icon"><i class="fas fa-robot"></i></div>
+          <div class="paper-body">
+            <h4>Hybrid AI Recommender System for Personalized Tutoring</h4>
+            <p>Design and evaluation of a hybrid AI tutor recommendation system for the Saudi Arabian educational context, integrating collaborative filtering and content-based logic.</p>
+            <div class="paper-tags"><span>AI</span><span>Recommendation Systems</span><span>Education</span></div>
+          </div>
+         <a href="Papers/AI_Final_Project_Paper.pdf" target="_blank" class="btn-view">View <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="paper-card">
+          <div class="paper-icon"><i class="fas fa-shield-alt"></i></div>
+          <div class="paper-body">
+            <h4>Ransomware Evolution: Emerging Cyber Threats &amp; Defense Mechanisms in the Digital Age</h4>
+            <p>Analysis of modern ransomware progression including RaaS ecosystems, double extortion, AI-driven payloads, and evaluation of defense strategies like Zero Trust and endpoint detection.</p>
+            <div class="paper-tags"><span>Cybersecurity</span><span>Ransomware</span><span>Defense</span></div>
+          </div>
+          <a href="Papers/ICS_Final_Project_Paper.pdf" target="_blank" class="btn-view">View <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="paper-card">
+          <div class="paper-icon"><i class="fas fa-network-wired"></i></div>
+          <div class="paper-body">
+            <h4>IoT: Transformative Applications, Societal Implications &amp; Ethical Challenges</h4>
+            <p>Exploration of IoT's impact across healthcare, transportation, and smart cities, with analysis of privacy, security, and ethical considerations in widespread IoT adoption.</p>
+            <div class="paper-tags"><span>Ethics</span><span>IoT</span><span>Computing</span></div>
+          </div>
+       <a href="Papers/EIC_Final_Project_Paper.pdf" target="_blank" class="btn-view">View <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="paper-card">
+          <div class="paper-icon"><i class="fas fa-code-branch"></i></div>
+          <div class="paper-body">
+            <h4>Security of Distributed Software Agents in Modern Software Engineering Systems</h4>
+            <p>Literature review and analytical synthesis of security vulnerabilities in distributed multi-agent systems, examining DevSecOps, blockchain trust models, and security-by-design principles.</p>
+            <div class="paper-tags"><span>Software Engineering</span><span>Multi-Agent</span><span>Security</span></div>
+          </div>
+          <a href="Papers/SE_Final_Project_Paper.pdf" target="_blank" class="btn-view">View <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="paper-card">
+          <div class="paper-icon"><i class="fas fa-hospital"></i></div>
+          <div class="paper-body">
+            <h4>EpiLoad: AI-Driven Hospital Load Management During Epidemic Surges — Literature Review &amp; Framework Proposal</h4>
+            <p>Senior project literature review proposing an integrated AI framework combining predictive analytics, decision support, and cross-hospital coordination for epidemic surge management.</p>
+            <div class="paper-tags"><span>Senior Project</span><span>Healthcare AI</span><span>Predictive Analytics</span></div>
+          </div>
+          <a href="Papers/SP_LiteratureReview.pdf" target="_blank" class="btn-view">View <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ACHIEVEMENTS -->
+    <div class="tab-content" id="tab-achievements">
+      <div class="achievements-grid">
+        <div class="ach-card gold"><i class="fas fa-trophy"></i><div><h4>Dean's List Recognition</h4><p>2023–2024 &amp; 2024–2025 — Academic Excellence Award</p></div></div>
+        <div class="ach-card green"><i class="fas fa-star"></i><div><h4>GPA: 3.97 / 4.00</h4><p>Cumulative Grade Point Average — Effat University</p></div></div>
+        <div class="ach-card cream"><i class="fas fa-award"></i><div><h4>Queen Effat Citizenship Award Nominee</h4><p>Nominated twice for exemplary citizenship and community service</p></div></div>
+        <div class="ach-card green"><i class="fas fa-users"></i><div><h4>SPE Student Chapter Founding Member</h4><p>First SPE student chapter initiative at Effat University</p></div></div>
+        <div class="ach-card cream"><i class="fas fa-crown"></i><div><h4>Student Council Vice President</h4><p>Al-Kon International School, 2022–2023</p></div></div>
+        <div class="ach-card green"><i class="fas fa-hands-helping"></i><div><h4>627+ Volunteering Hours</h4><p>Documented community service hours — external &amp; university initiatives</p></div></div>
+        <div class="ach-card gold"><i class="fab fa-ibm"></i><div><h4>IBM DevOps Professional Certificate</h4><p>15-course professional certificate — IBM / Coursera, Apr 2026</p></div></div>
+        <div class="ach-card cream"><i class="fas fa-certificate"></i><div><h4>Multiple Coursera Certifications</h4><p>AI math, ML, communication, ethics &amp; professional development</p></div></div>
+        <div class="ach-card gold"><i class="fas fa-graduation-cap"></i><div><h4>American Diploma GPA: 4.0 / 4.0</h4><p>Al-Kon International School — Perfect academic record</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== CONTACT ======================== -->
+<section id="contact" class="reveal">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Get In Touch</span>
+      <h2 class="section-title">Contact</h2>
+    </div>
+    <div class="contact-layout">
+      <div class="contact-cards">
+        <div class="contact-card">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <p class="contact-label">Email</p>
+            <a href="mailto:eldinseif22@gmail.com">eldinseif22@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-card">
+          <i class="fas fa-phone"></i>
+          <div>
+            <p class="contact-label">Phone</p>
+            <span id="phoneNum">+966 56 813 2683</span>
+            <button class="copy-btn" id="copyPhone" title="Copy phone number"><i class="fas fa-copy"></i></button>
+          </div>
+        </div>
+        <div class="contact-card">
+          <i class="fab fa-linkedin"></i>
+          <div>
+            <p class="contact-label">LinkedIn</p>
+            <a href="https://www.linkedin.com/in/sarah-elshiaty-62820b307" target="_blank">sarah-elshiaty</a>
+          </div>
+        </div>
+        <div class="contact-card">
+          <i class="fab fa-github"></i>
+          <div>
+            <p class="contact-label">GitHub</p>
+            <a href="https://github.com/SarahElshiaty" target="_blank">SarahElshiaty</a>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <label for="fname">Name</label>
+          <input type="text" id="fname" placeholder="Your name" required />
+        </div>
+        <div class="form-group">
+          <label for="femail">Email</label>
+          <input type="email" id="femail" placeholder="your@email.com" required />
+        </div>
+        <div class="form-group">
+          <label for="fmessage">Message</label>
+          <textarea id="fmessage" rows="5" placeholder="Write your message here..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary full-width">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== FOOTER ======================== -->
+<footer>
+  <div class="container">
+    <p class="footer-logo">Sarah Elshiaty<span>.</span></p>
+    <p>&copy; 2026 Sarah Elshiaty. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="https://github.com/SarahElshiaty" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/sarah-elshiaty-62820b307" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:eldinseif22@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!-- ======================== PROJECT MODAL ======================== -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" id="projectModal">
+    <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
+    <div class="modal-content">
+      <span class="modal-cat" id="modalCat"></span>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDesc"></p>
+      <div class="modal-tags" id="modalTags"></div>
+      <div class="modal-links" id="modalLinks"></div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
