@@ -1,24 +1,24 @@
 /* =====================================================
    SARAH ELSHIATY PORTFOLIO — style.css
-   Palette: sage green, beige, cream, white, deep green
+   Palette: deep plum, elegant green, muted lavender, beige, cream
    Fonts: Cormorant Garamond + DM Sans + Space Mono
 ===================================================== */
 
 :root {
-  --green-deep:    #2d5a27;
-  --green-mid:     #4a7c44;
-  --green-sage:    #7aaa72;
-  --green-light:   #b5d4b0;
-  --green-pale:    #dff0db;
-  --beige:         #f5f0e8;
-  --cream:         #faf7f2;
+  --green-deep:    #3b245f;
+  --green-mid:     #5f3b8c;
+  --green-sage:    #7f6aa3;
+  --green-light:   #c9b8e8;
+  --green-pale:    #eee8f8;
+  --beige:         #f3ede3;
+  --cream:         #fbf7f0;
   --white:         #ffffff;
-  --text-dark:     #1e2d1a;
-  --text-mid:      #3d4f39;
-  --text-soft:     #6b7f67;
-  --shadow-sm:     0 2px 12px rgba(45,90,39,0.08);
-  --shadow-md:     0 6px 28px rgba(45,90,39,0.12);
-  --shadow-lg:     0 16px 56px rgba(45,90,39,0.16);
+  --text-dark:     #261f2e;
+  --text-mid:      #4a4057;
+  --text-soft:     #74687f;
+  --shadow-sm:     0 2px 12px rgba(59,36,95,0.08);
+  --shadow-md:     0 6px 28px rgba(59,36,95,0.13);
+  --shadow-lg:     0 16px 56px rgba(59,36,95,0.18);
   --radius-sm:     8px;
   --radius-md:     16px;
   --radius-lg:     24px;
@@ -160,7 +160,7 @@ section { padding: 6rem 0; }
 /* ===================== HERO ===================== */
 #hero {
   min-height: 100vh; position: relative;
-  background: linear-gradient(135deg, var(--green-deep) 0%, #1a3d16 40%, #2d5a27 70%, #4a7c44 100%);
+  background: radial-gradient(circle at 18% 28%, rgba(201,184,232,0.22) 0%, transparent 34%), linear-gradient(135deg, #24133f 0%, #3b245f 42%, #315b3a 78%, #476f4d 100%);
   display: flex; align-items: center; justify-content: center;
   overflow: hidden; padding: 8rem 2rem 4rem;
 }
@@ -176,8 +176,8 @@ section { padding: 6rem 0; }
 .hero-photo-wrap {
   flex-shrink: 0;
   width: 220px; height: 220px; border-radius: 50%;
-  border: 4px solid rgba(181,212,176,0.5);
-  box-shadow: 0 0 0 8px rgba(122,170,114,0.15), var(--shadow-lg);
+  border: 4px solid rgba(201,184,232,0.65);
+  box-shadow: 0 0 0 8px rgba(127,106,163,0.18), var(--shadow-lg);
   overflow: hidden;
   animation: heroPhotoIn 1s ease both;
 }
@@ -211,6 +211,18 @@ section { padding: 6rem 0; }
   margin-bottom: 2rem; line-height: 1.7; max-width: 520px;
 }
 .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.8rem; }
+.hero-btns .btn-secondary {
+  color: var(--white);
+  border-color: rgba(201,184,232,0.75);
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(8px);
+}
+.hero-btns .btn-secondary:hover {
+  background: var(--green-light);
+  color: var(--green-deep);
+  border-color: var(--green-light);
+  box-shadow: var(--shadow-md);
+}
 .hero-quote {
   font-family: var(--font-serif); font-style: italic;
   font-size: 1.05rem; color: var(--green-light); opacity: 0.85;
@@ -382,7 +394,7 @@ section { padding: 6rem 0; }
 .project-card:hover .project-img img { transform: scale(1.05); }
 .project-img-overlay {
   position: absolute; inset: 0;
-  background: linear-gradient(to bottom, transparent 60%, rgba(30,45,26,0.3));
+  background: linear-gradient(to bottom, transparent 60%, rgba(38,31,46,0.35));
 }
 .project-body { padding: 1.5rem; flex: 1; display: flex; flex-direction: column; }
 .project-cat {
@@ -589,7 +601,7 @@ footer p { font-size: 0.83rem; margin-bottom: 1rem; }
 /* ===================== MODAL ===================== */
 .modal-overlay {
   position: fixed; inset: 0; z-index: 2000;
-  background: rgba(30,45,26,0.7); backdrop-filter: blur(8px);
+  background: rgba(38,31,46,0.72); backdrop-filter: blur(8px);
   display: flex; align-items: center; justify-content: center;
   opacity: 0; pointer-events: none; transition: opacity var(--transition);
   padding: 1rem;
