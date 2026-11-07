@@ -281,8 +281,8 @@ const projectData = {
     category: 'Current Project',
     desc: 'EpiLoad is an ongoing senior project focused on hospital load management during epidemic surges. The framework combines current-state analytics, predictive analytics, decision support, and cross-hospital coordination. It aims to support healthcare decision-making by identifying overload risks, recommending operational actions, and enabling privacy-conscious coordination between hospitals.',
     tags: ['AI', 'Healthcare Informatics', 'Decision Support', 'Predictive Analytics', 'Senior Project'],
-    link: 'https://github.com/SarahElshiaty/epiload-ai-hospital-load-management',
-    linkLabel: 'GitHub'
+    link: null,
+    linkLabel: null
   }
 };
 
@@ -305,7 +305,9 @@ document.querySelectorAll('.btn-details').forEach(btn => {
     tagsEl.innerHTML = data.tags.map(t => `<span>${t}</span>`).join('');
 
     const linksEl = document.getElementById('modalLinks');
-    linksEl.innerHTML = `<a href="${data.link}" target="_blank" class="btn btn-primary">${data.linkLabel} <i class="fas fa-external-link-alt"></i></a>`;
+    linksEl.innerHTML = data.link
+      ? `<a href="${data.link}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">${data.linkLabel} <i class="fas fa-external-link-alt"></i></a>`
+      : '';
 
     modalOverlay.classList.add('active');
     document.body.style.overflow = 'hidden';
