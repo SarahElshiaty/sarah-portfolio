@@ -524,6 +524,13 @@ section { padding: 6rem 0; }
   .credential-feature, .credential-item, .credential-group { transition: none; }
 }
 
+.credentials-archive-link { margin-top: 1.5rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.1rem 1.25rem; background: var(--white); border: 1px solid var(--green-pale); border-radius: var(--radius-md); }
+.credentials-archive-link p { max-width: 540px; font-size: .85rem; line-height: 1.6; color: var(--text-soft); }
+.credentials-archive-button { display: inline-flex; align-items: center; gap: .55rem; flex-shrink: 0; padding: .7rem 1rem; background: var(--green-deep); border-radius: 6px; color: var(--white); font-size: .83rem; text-decoration: none; font-weight: 700; }
+.credentials-archive-button:hover { background: var(--green-mid); color: var(--white); }
+.credentials-archive-button:focus-visible { outline: 3px solid var(--green-sage); outline-offset: 3px; }
+@media (max-width: 768px) { .credentials-archive-link { align-items: flex-start; flex-direction: column; } }
+
 /* --- EXPERIENCE --- */
 .exp-list { display: flex; flex-direction: column; gap: 1.2rem; }
 .exp-card {
