@@ -173,7 +173,7 @@ const projectData = {
     category: 'AI & Data Science',
     desc: 'Developed a machine learning workflow for ICU mortality prediction using structured clinical data. The project included preprocessing, exploratory analysis, feature refinement, class imbalance handling, model comparison, threshold tuning, and evaluation using recall, F1-score, ROC-AUC, and confusion matrices. The final direction emphasized detecting high-risk ICU patients while keeping the model interpretable.',
     tags: ['Python', 'Pandas', 'Scikit-learn', 'XGBoost', 'Machine Learning', 'Healthcare Informatics'],
-    link: 'https://github.com/SarahElshiaty/ICU-Mortality-Prediction-ML',
+    link: 'https://github.com/SarahElshiaty/icu-mortality-risk-stratification',
     linkLabel: 'GitHub'
   },
 
@@ -191,7 +191,7 @@ const projectData = {
     category: 'Security & Networking',
     desc: 'Performed a structured web application security assessment using DVWA and ethical hacking concepts. The project involved testing and documenting vulnerabilities related to SQL injection, cross-site scripting, authentication weaknesses, and common web security risks in a controlled environment.',
     tags: ['Security', 'Ethical Hacking', 'DVWA', 'SQL Injection', 'XSS'],
-    link: 'https://github.com/SarahElshiaty/web-security-assessment-dvwa',
+    link: 'https://github.com/SarahElshiaty/web-application-security-assessment',
     linkLabel: 'GitHub'
   },
 
@@ -209,7 +209,7 @@ const projectData = {
     category: 'Web & Database',
     desc: 'Designed and developed a mental wellness web application focused on user support, accessibility, and database-driven interaction. The system combines front-end structure, backend logic, and database functionality to organize content and support user-centered workflows.',
     tags: ['HTML', 'CSS', 'PHP', 'SQL', 'Web Development'],
-    link: 'https://github.com/SarahElshiaty/MindBalance-Web-App',
+    link: 'https://github.com/SarahElshiaty/mindbalance-wellness-tracker',
     linkLabel: 'GitHub'
   },
 
@@ -218,7 +218,7 @@ const projectData = {
     category: 'AI & Data Science',
     desc: 'Developed an AI-focused tutor recommendation system designed to connect students with suitable tutors through intelligent matching logic. The project explores recommendation behavior, personalized learning support, and structured educational service workflows.',
     tags: ['Python', 'AI', 'Recommendation Systems', 'Intelligent Systems'],
-    link: 'https://github.com/SarahElshiaty/AI-Tutor-Recommendation-System',
+    link: 'https://github.com/SarahElshiaty/hybrid-ai-tutor-recommender',
     linkLabel: 'GitHub'
   },
 
@@ -367,7 +367,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
   const subject = encodeURIComponent(`Portfolio Contact from ${name}`);
   const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
 
-  window.location.href = `mailto:eldinseif22@gmail.com?subject=${subject}&body=${body}`;
+  window.location.href = `mailto:skelshiaty@gmail.com?subject=${subject}&body=${body}`;
 });
 
 // ===================== SMOOTH NAV SCROLL =====================
