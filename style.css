@@ -481,6 +481,49 @@ section { padding: 6rem 0; }
 }
 .btn-view:hover { background: var(--green-deep); color: var(--white); }
 
+
+/* Certificates: highlighted credentials and compact, collapsible archive */
+.credentials-header, .credentials-archive-heading { margin-bottom: 1.3rem; }
+.credentials-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 1.5rem; }
+.credentials-header h3, .credentials-archive-heading h3 { color: var(--green-deep); font-size: 1.2rem; margin-bottom: 0.4rem; }
+.credentials-header p, .credentials-archive-heading p { color: var(--text-soft); font-size: 0.9rem; line-height: 1.6; max-width: 690px; }
+.credentials-total { flex-shrink: 0; border: 1px solid var(--green-light); background: var(--white); color: var(--green-deep); border-radius: 100px; padding: 0.35rem 0.85rem; font-size: 0.78rem; font-weight: 700; }
+.credentials-featured-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0.9rem; }
+.credential-feature { min-width: 0; background: var(--white); border: 1px solid var(--green-pale); border-radius: var(--radius-md); box-shadow: var(--shadow-sm); padding: 1.15rem 1.25rem; display: flex; flex-direction: column; justify-content: space-between; gap: 0.75rem; }
+.credential-feature:hover { border-color: var(--green-light); }
+.credential-feature-primary { grid-column: 1 / -1; background: var(--green-deep); color: var(--white); border-color: var(--green-deep); }
+.credential-feature h4 { font-size: 0.93rem; line-height: 1.45; color: var(--text-dark); font-weight: 700; overflow-wrap: anywhere; }
+.credential-feature-primary h4 { color: var(--white); font-size: 1.05rem; }
+.credential-feature p { color: var(--text-soft); margin-top: 0.35rem; font-size: 0.78rem; line-height: 1.5; }
+.credential-feature-primary p { color: rgba(255,255,255,0.85); }
+.credential-verify, .credential-item a { display: inline-flex; gap: 0.4rem; align-items: center; width: fit-content; font-size: 0.8rem; font-weight: 700; color: var(--green-deep); text-decoration: underline; text-underline-offset: 3px; }
+.credential-feature-primary .credential-verify { color: var(--white); }
+.credential-verify:hover, .credential-item a:hover { text-decoration-thickness: 2px; }
+.credentials-archive { margin-top: 2.6rem; }
+.credential-group { background: var(--white); border: 1px solid var(--green-pale); border-radius: var(--radius-md); margin: 0.7rem 0; overflow: hidden; }
+.credential-group summary { padding: 0.95rem 1.15rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; cursor: pointer; font-weight: 700; color: var(--green-deep); list-style-position: inside; }
+.credential-group summary:hover { background: var(--green-pale); }
+.credential-group[open] summary { border-bottom: 1px solid var(--green-pale); background: var(--green-pale); }
+.credential-count { font-size: 0.76rem; font-weight: 500; color: var(--text-soft); white-space: nowrap; }
+.credential-list { padding: 0.35rem 1.2rem; }
+.credential-item { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.8rem 0; border-bottom: 1px solid var(--green-pale); }
+.credential-item:last-child { border-bottom: 0; }
+.credential-item > div { min-width: 0; display: flex; flex-direction: column; gap: 0.25rem; }
+.credential-item strong { color: var(--text-dark); font-size: 0.84rem; line-height: 1.45; font-weight: 600; }
+.credential-item span { color: var(--text-soft); font-size: 0.75rem; line-height: 1.5; }
+.credential-item a { flex-shrink: 0; white-space: nowrap; }
+.credential-feature a:focus-visible, .credential-group summary:focus-visible, .credential-item a:focus-visible { outline: 3px solid var(--green-sage); outline-offset: 3px; }
+@media (max-width: 768px) {
+  .credentials-featured-grid { grid-template-columns: 1fr; }
+  .credential-feature-primary { grid-column: auto; }
+  .credentials-header { flex-direction: column; gap: 0.7rem; }
+  .credential-item { align-items: flex-start; flex-direction: column; gap: 0.45rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tab-content.active { animation: none; }
+  .credential-feature, .credential-item, .credential-group { transition: none; }
+}
+
 /* --- EXPERIENCE --- */
 .exp-list { display: flex; flex-direction: column; gap: 1.2rem; }
 .exp-card {
